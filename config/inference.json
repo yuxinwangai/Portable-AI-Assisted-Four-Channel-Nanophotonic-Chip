@@ -1,0 +1,121 @@
+{
+  "species_order": [
+    "dachangganjun",
+    "furongxuehujun",
+    "rongzaohujun"
+  ],
+  "grade_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "batch_size": 1,
+  "lfpe": {
+    "patch_size": 512,
+    "stride": 128,
+    "segmentation_median_kernel": 31,
+    "patch_median_kernel": 5,
+    "max_missing_fraction": 0.5,
+    "max_black_fraction": 0.8,
+    "min_aspect_ratio": 5,
+    "min_component_area": 500,
+    "max_component_area": 10000
+  },
+  "models": {
+    "species": {
+      "checkpoint": "weights/species.pth",
+      "classes": 3,
+      "input_size": 224,
+      "normalization": {
+        "torchvision_resnet50": {
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "pixel_scale": 255
+        },
+        "legacy_resnet50": {
+          "mean": [
+            0.4914,
+            0.4822,
+            0.4465
+          ],
+          "std": [
+            0.2023,
+            0.1994,
+            0.201
+          ],
+          "pixel_scale": 255
+        }
+      }
+    },
+    "dachangganjun": {
+      "checkpoint": "weights/dachangganjun.pth",
+      "classes": 7,
+      "input_size": 512,
+      "normalization": {
+        "mean": [
+          41.7452392578125,
+          60.4012336730957,
+          67.99641036987305
+        ],
+        "std": [
+          30.001170711473353,
+          42.44754448073663,
+          30.203417362487514
+        ],
+        "pixel_scale": 1
+      }
+    },
+    "furongxuehujun": {
+      "checkpoint": "weights/furongxuehujun.pth",
+      "classes": 7,
+      "input_size": 512,
+      "normalization": {
+        "mean": [
+          48.36210632324219,
+          71.38200759887695,
+          94.03285598754883
+        ],
+        "std": [
+          28.05500713267208,
+          36.83280731212999,
+          28.262580704192363
+        ],
+        "pixel_scale": 1
+      }
+    },
+    "rongzaohujun": {
+      "checkpoint": "weights/rongzaohujun.pth",
+      "classes": 7,
+      "input_size": 512,
+      "normalization": {
+        "mean": [
+          33.132198333740234,
+          53.60417175292969,
+          62.96427536010742
+        ],
+        "std": [
+          26.861444765969935,
+          37.96139057073335,
+          29.57720326377392
+        ],
+        "pixel_scale": 1
+      }
+    }
+  },
+  "burden_mapping": {
+    "log10_offset": 0.5,
+    "log10_step": 1.1666666666666667
+  }
+}

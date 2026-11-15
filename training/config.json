@@ -1,0 +1,58 @@
+{
+  "species": {
+    "epochs": 50,
+    "train_batch_size": 64,
+    "eval_batch_size": 64,
+    "optimizer": "Adam",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.0005,
+    "horizontal_flip": 0.5,
+    "vertical_flip": 0,
+    "loss": "cross_entropy"
+  },
+  "dachangganjun": {
+    "epochs": 300,
+    "train_batch_size": 16,
+    "eval_batch_size": 8,
+    "optimizer": "SGD",
+    "learning_rate": 0.15,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "T_max": 200,
+    "horizontal_flip": 0.5,
+    "vertical_flip": 0.5,
+    "loss": "sigmoid_focal",
+    "alpha": 0.25,
+    "gamma": 2
+  },
+  "furongxuehujun": {
+    "epochs": 300,
+    "train_batch_size": 16,
+    "eval_batch_size": 8,
+    "optimizer": "SGD",
+    "learning_rate": 0.15,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "T_max": 200,
+    "horizontal_flip": 0.5,
+    "vertical_flip": 0.5,
+    "loss": "sigmoid_focal",
+    "alpha": 0.25,
+    "gamma": 2
+  },
+  "rongzaohujun": {
+    "epochs": 300,
+    "train_batch_size": 16,
+    "eval_batch_size": 8,
+    "optimizer": "SGD",
+    "learning_rate": 0.15,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "T_max": 200,
+    "horizontal_flip": 0.5,
+    "vertical_flip": 0.5,
+    "loss": "sigmoid_focal",
+    "alpha": 0.25,
+    "gamma": 2
+  }
+}

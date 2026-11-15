@@ -1,0 +1,68 @@
+[
+  {
+    "sample_id": "I001",
+    "file": "demo/images/I001.png",
+    "input_mode": "segmented",
+    "true_species": "dachangganjun",
+    "true_grade": 5,
+    "image_id": "IM-0047",
+    "source_filename": "1230_D2_002xia.3-6e_bx.png",
+    "species_subset": "test",
+    "burden_subset": "test"
+  },
+  {
+    "sample_id": "I002",
+    "file": "demo/images/I002.png",
+    "input_mode": "segmented",
+    "true_species": "dachangganjun",
+    "true_grade": 4,
+    "image_id": "IM-0071",
+    "source_filename": "1230_D3_004xia.3-8e_bx.png",
+    "species_subset": "test",
+    "burden_subset": "test"
+  },
+  {
+    "sample_id": "I003",
+    "file": "demo/images/I003.png",
+    "input_mode": "segmented",
+    "true_species": "furongxuehujun",
+    "true_grade": 6,
+    "image_id": "IM-0214",
+    "source_filename": "1218_A2_018xia.7-.8p_bx.png",
+    "species_subset": "test",
+    "burden_subset": "test"
+  },
+  {
+    "sample_id": "I004",
+    "file": "demo/images/I004.png",
+    "input_mode": "segmented",
+    "true_species": "furongxuehujun",
+    "true_grade": 7,
+    "image_id": "IM-0222",
+    "source_filename": "1218_C1_004-xiaa_bx.png",
+    "species_subset": "test",
+    "burden_subset": "test"
+  },
+  {
+    "sample_id": "I005",
+    "file": "demo/images/I005.png",
+    "input_mode": "segmented",
+    "true_species": "rongzaohujun",
+    "true_grade": 6,
+    "image_id": "IM-0435",
+    "source_filename": "1115_C6_002xia.2-3a_bx.png",
+    "species_subset": "test",
+    "burden_subset": "test"
+  },
+  {
+    "sample_id": "I006",
+    "file": "demo/images/I006.png",
+    "input_mode": "segmented",
+    "true_species": "rongzaohujun",
+    "true_grade": 5,
+    "image_id": "IM-0487",
+    "source_filename": "1127_A6_002xia.2-3a_bx.png",
+    "species_subset": "test",
+    "burden_subset": "test"
+  }
+]

@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bacteria-prediction"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy==1.24.3", "opencv-python==4.8.1.78", "Pillow==10.0.1", "torch==2.3.1", "torchvision==0.18.1", "scikit-learn==1.6.1", "mmpretrain==1.2.0", "mmcv-lite==2.2.0", "mmengine==0.10.7"]
+
+[project.scripts]
+bacteria-predict = "bacteria_prediction.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
